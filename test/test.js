@@ -11,6 +11,9 @@ var viewModel = {
       { email: 'npm.m@rkusa.st', confirmed: true },
       { email: 'github.m@rkusa.st', confirmed: true }
     ]
+  },
+  helper: function() {
+    return 'successfully called'
   }
 }
 
@@ -74,5 +77,10 @@ describe('ViewModelProxy', function() {
   it('should allow setting values on the original object', function() {
     proxy.viewModel.user.name = 'm.rkusa'
     expect(viewModel.user.name).to.equal('m.rkusa')
+  })
+
+  it('should return the proxy when getting `$proxy`', function() {
+    expect(proxy.viewModel.$proxy).to.equal(proxy)
+    expect(proxy.viewModel.user.$proxy).to.equal(proxy)
   })
 })
