@@ -14,8 +14,6 @@ var viewModel = {
   }
 }
 
-new ViewModelProxy(viewModel)
-
 describe('ViewModelProxy', function() {
   var proxy, accessed = []
 
@@ -66,5 +64,15 @@ describe('ViewModelProxy', function() {
       'user.emails.0.email',
       'user.emails.1.email'
     ])
+  })
+
+  it('not fire the `get` event for functions', function() {
+    expect(proxy.viewModel.helper()).to.equal('successfully called')
+    expect(accessed).to.eql([])
+  })
+
+  it('should allow setting values on the original object', function() {
+    proxy.viewModel.user.name = 'm.rkusa'
+    expect(viewModel.user.name).to.equal('m.rkusa')
   })
 })
