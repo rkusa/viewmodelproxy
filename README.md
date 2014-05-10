@@ -1,8 +1,8 @@
 # viewmodelproxy
 
-[![NPM](https://badge.fury.io/js/viewmodelproxy.png)](https://npmjs.org/package/viewmodelproxy)
-[![Build Status](https://secure.travis-ci.org/rkusa/viewmodelproxy.png)](http://travis-ci.org/rkusa/viewmodelproxy)
-[![Dependency Status](https://david-dm.org/rkusa/viewmodelproxy.png?theme=shields.io)](https://david-dm.org/rkusa/viewmodelproxy)
+[![NPM](https://badge.fury.io/js/viewmodelproxy.svg)](https://npmjs.org/package/viewmodelproxy)
+[![Build Status](https://secure.travis-ci.org/rkusa/viewmodelproxy.svg)](http://travis-ci.org/rkusa/viewmodelproxy)
+[![Dependency Status](https://david-dm.org/rkusa/viewmodelproxy.svg?theme=shields.io)](https://david-dm.org/rkusa/viewmodelproxy)
 
 ## MIT License
 Copyright (c) 2014 Markus Ast
